@@ -17,6 +17,8 @@ public class ProjectileWeapon : Weapon
 
     private PlayerController player;
 
+    private Vector2 lastMoveDirection = Vector2.right;
+
     // ================= INITIALIZE =================
 
     public void Initialize(ProjectileWeaponData weaponData)
@@ -37,7 +39,15 @@ public class ProjectileWeapon : Weapon
 
     void Update()
     {
-        if (runtimeStats == null || isAttacking)
+        if (runtimeStats == null)
+            return;
+
+        if (player != null && player.MoveDirection != Vector2.zero)
+        {
+            lastMoveDirection = player.MoveDirection.normalized;
+        }
+
+        if (isAttacking)
             return;
 
         attackTimer -= Time.deltaTime;
@@ -56,10 +66,15 @@ public class ProjectileWeapon : Weapon
 
         Enemy target = FindClosestEnemyOnScreen();
 
-        if (target != null)
+        if (runtimeStats.requireEnemyToShoot && target == null)
         {
-            yield return StartCoroutine(FireWaves());
+            attackTimer = runtimeStats.attackInterval;
+            isAttacking = false;
+            yield break;
         }
+
+        // Otherwise fire normally
+        yield return StartCoroutine(FireWaves());
 
         attackTimer = runtimeStats.attackInterval;
         isAttacking = false;
@@ -72,10 +87,7 @@ public class ProjectileWeapon : Weapon
         if (player == null)
             yield break;
 
-        Vector2 baseDir = player.MoveDirection;
-
-        if (baseDir == Vector2.zero)
-            baseDir = Vector2.right;
+        Vector2 baseDir = lastMoveDirection;
 
         for (int w = 0; w < runtimeStats.waveCount; w++)
         {
@@ -93,19 +105,13 @@ public class ProjectileWeapon : Weapon
         int bursts = runtimeStats.burstCount;
         float cone = runtimeStats.coneAngle;
 
-        float burstStep = 0f;
-
-        if (bursts > 1)
-            burstStep = cone / (bursts - 1);
-
-        float startAngle = -cone * 0.5f;
-
         for (int b = 0; b < bursts; b++)
         {
-            float burstAngle = startAngle + burstStep * b;
+            // Random angle inside cone
+            float randomAngle = Random.insideUnitCircle.x * cone * 0.5f;
 
             Vector2 rotatedBase =
-                Quaternion.Euler(0f, 0f, burstAngle) * baseDir;
+                Quaternion.Euler(0f, 0f, randomAngle) * baseDir;
 
             FireSpread(rotatedBase);
 
@@ -152,13 +158,26 @@ public class ProjectileWeapon : Weapon
             Quaternion.identity
         );
 
-        Talisman projectile =
-            projObj.GetComponent<Talisman>();
-
-        if (projectile != null)
+        // Try Talisman
+        Talisman talisman = projObj.GetComponent<Talisman>();
+        if (talisman != null)
         {
-            projectile.Initialize(direction, runtimeStats);
+            talisman.Initialize(direction, runtimeStats);
+            return;
         }
+
+        // Try MeteoricDebris
+        MeteoricDebris debris = projObj.GetComponent<MeteoricDebris>();
+        if (debris != null)
+        {
+            debris.Initialize(direction, runtimeStats);
+            return;
+        }
+
+        // Safety warning
+        Debug.LogWarning(
+            "Projectile prefab has no supported projectile script attached."
+        );
     }
 
     // ================= TARGETING =================

@@ -16,7 +16,7 @@ MonoBehaviour:
   characterSprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee,
     type: 3}
   moveSpeed: 5
-  maxHealth: 100
-  startingWeapon: {fileID: 11400000, guid: dcc360684c61a094f9860d16fb90ab61, type: 2}
+  startingWeapon: {fileID: 11400000, guid: 85a19ecf192221d4c9c1a43fb70e1869, type: 2}
   availableUltimates:
   - {fileID: 11400000, guid: 87a965a90523feb408329095dea6aed9, type: 2}
+  selectedUltimate: {fileID: 0}

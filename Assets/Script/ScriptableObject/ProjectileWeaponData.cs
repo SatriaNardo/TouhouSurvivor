@@ -25,4 +25,7 @@ public class ProjectileWeaponData : WeaponData
     [Header("Homing")]
     public bool useHoming = false;
     public float homingStrength = 5f;
+
+    [Header("Targeting")]
+    public bool requireEnemyToShoot = true;
 }

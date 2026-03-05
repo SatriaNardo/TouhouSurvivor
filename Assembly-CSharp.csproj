@@ -105,6 +105,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
     <Compile Include="Assets\Script\MobileJoystickUI.cs" />
     <Compile Include="Assets\Script\WeaponManager.cs" />
+    <Compile Include="Assets\Script\MeteoricDebris.cs" />
     <Compile Include="Assets\PlayerInputActions.cs" />
     <Compile Include="Assets\Script\CharacterInitializer.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />

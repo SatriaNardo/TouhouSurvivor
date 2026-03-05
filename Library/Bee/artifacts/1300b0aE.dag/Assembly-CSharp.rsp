@@ -496,6 +496,7 @@
 "Assets/Script/EnemyManager.cs"
 "Assets/Script/ExplosionUltimate.cs"
 "Assets/Script/FollowCamera.cs"
+"Assets/Script/MeteoricDebris.cs"
 "Assets/Script/MobileJoystickUI.cs"
 "Assets/Script/NonDirectionalLaser.cs"
 "Assets/Script/OrbitWeapon.cs"

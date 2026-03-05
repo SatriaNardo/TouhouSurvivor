@@ -1,106 +1,113 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Unity\\Unity Game\\VampSurvivor\\",
+  "WorkspaceRootPath": "C:\\Unity\\Unity Game\\TouhouSurvivor\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|C:\\Unity\\Unity Game\\VampSurvivor\\assets\\script\\characterinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\characterinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{70CF9CD7-B186-A217-E73E-B20ED19C0FB1}|Assembly-CSharp.csproj|c:\\unity\\unity game\\touhousurvivor\\assets\\script\\talisman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CF9CD7-B186-A217-E73E-B20ED19C0FB1}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\talisman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|c:\\unity\\unity game\\vampsurvivor\\assets\\script\\talisman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|C:\\Unity\\Unity Game\\TouhouSurvivor\\assets\\script\\talisman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\talisman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|C:\\Unity\\Unity Game\\VampSurvivor\\assets\\script\\projectileweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\projectileweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{70CF9CD7-B186-A217-E73E-B20ED19C0FB1}|Assembly-CSharp.csproj|c:\\unity\\unity game\\touhousurvivor\\assets\\script\\orbitweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CF9CD7-B186-A217-E73E-B20ED19C0FB1}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\orbitweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|C:\\Unity\\Unity Game\\VampSurvivor\\assets\\script\\projectileweaponruntimestats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\projectileweaponruntimestats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|C:\\Unity\\Unity Game\\VampSurvivor\\assets\\script\\scriptableobject\\projectileweapondata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\scriptableobject\\projectileweapondata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|C:\\Unity\\Unity Game\\VampSurvivor\\assets\\script\\playerspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\playerspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|C:\\Unity\\Unity Game\\VampSurvivor\\assets\\script\\orbitweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|C:\\Unity\\Unity Game\\TouhouSurvivor\\assets\\script\\orbitweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\orbitweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|C:\\Unity\\Unity Game\\VampSurvivor\\assets\\script\\weaponmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{70CF9CD7-B186-A217-E73E-B20ED19C0FB1}|Assembly-CSharp.csproj|C:\\Unity\\Unity Game\\TouhouSurvivor\\assets\\script\\characterinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CF9CD7-B186-A217-E73E-B20ED19C0FB1}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\characterinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|C:\\Unity\\Unity Game\\TouhouSurvivor\\assets\\script\\projectileweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\projectileweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|C:\\Unity\\Unity Game\\TouhouSurvivor\\assets\\script\\projectileweaponruntimestats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\projectileweaponruntimestats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|C:\\Unity\\Unity Game\\TouhouSurvivor\\assets\\script\\scriptableobject\\projectileweapondata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\scriptableobject\\projectileweapondata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|C:\\Unity\\Unity Game\\TouhouSurvivor\\assets\\script\\playerspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\playerspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|C:\\Unity\\Unity Game\\TouhouSurvivor\\assets\\script\\weaponmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\weaponmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|C:\\Unity\\Unity Game\\VampSurvivor\\assets\\script\\weapons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|C:\\Unity\\Unity Game\\TouhouSurvivor\\assets\\script\\weapons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\weapons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|C:\\Unity\\Unity Game\\VampSurvivor\\assets\\script\\mobilejoystickui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|C:\\Unity\\Unity Game\\TouhouSurvivor\\assets\\script\\mobilejoystickui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\mobilejoystickui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|C:\\Unity\\Unity Game\\VampSurvivor\\assets\\script\\scriptableobject\\weapondata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|C:\\Unity\\Unity Game\\TouhouSurvivor\\assets\\script\\scriptableobject\\weapondata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\scriptableobject\\weapondata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|C:\\Unity\\Unity Game\\VampSurvivor\\assets\\script\\scriptableobject\\orbitweapondata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|C:\\Unity\\Unity Game\\TouhouSurvivor\\assets\\script\\scriptableobject\\orbitweapondata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\scriptableobject\\orbitweapondata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|C:\\Unity\\Unity Game\\VampSurvivor\\assets\\script\\weaponadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|C:\\Unity\\Unity Game\\TouhouSurvivor\\assets\\script\\weaponadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\weaponadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|C:\\Unity\\Unity Game\\VampSurvivor\\assets\\script\\scriptableobject\\characterdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|C:\\Unity\\Unity Game\\TouhouSurvivor\\assets\\script\\scriptableobject\\characterdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\scriptableobject\\characterdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|C:\\Unity\\Unity Game\\VampSurvivor\\assets\\script\\playerattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|C:\\Unity\\Unity Game\\TouhouSurvivor\\assets\\script\\playerattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\playerattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|C:\\Unity\\Unity Game\\VampSurvivor\\assets\\script\\characterselectionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|C:\\Unity\\Unity Game\\TouhouSurvivor\\assets\\script\\characterselectionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\characterselectionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|C:\\Unity\\Unity Game\\VampSurvivor\\assets\\script\\ultimatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|C:\\Unity\\Unity Game\\TouhouSurvivor\\assets\\script\\ultimatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\ultimatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|C:\\Unity\\Unity Game\\VampSurvivor\\assets\\script\\enemymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|C:\\Unity\\Unity Game\\TouhouSurvivor\\assets\\script\\enemymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\enemymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|C:\\Unity\\Unity Game\\VampSurvivor\\assets\\script\\followcamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|C:\\Unity\\Unity Game\\TouhouSurvivor\\assets\\script\\followcamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\followcamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|C:\\Unity\\Unity Game\\VampSurvivor\\assets\\script\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|C:\\Unity\\Unity Game\\TouhouSurvivor\\assets\\script\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|C:\\Unity\\Unity Game\\VampSurvivor\\assets\\script\\explosionultimate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|C:\\Unity\\Unity Game\\TouhouSurvivor\\assets\\script\\explosionultimate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\explosionultimate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|C:\\Unity\\Unity Game\\VampSurvivor\\assets\\script\\scriptableobject\\ultimatedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|C:\\Unity\\Unity Game\\TouhouSurvivor\\assets\\script\\scriptableobject\\ultimatedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\scriptableobject\\ultimatedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|C:\\Unity\\Unity Game\\VampSurvivor\\assets\\script\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|C:\\Unity\\Unity Game\\TouhouSurvivor\\assets\\script\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|C:\\Unity\\Unity Game\\VampSurvivor\\assets\\script\\orbitweaponruntimestats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|C:\\Unity\\Unity Game\\TouhouSurvivor\\assets\\script\\orbitweaponruntimestats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{851E57DB-E35A-588E-8BF1-7B31593FCD99}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\orbitweaponruntimestats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Unity\\Unity Game\\VampSurvivor\\Assets\\Script\\MiniHakkero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\MiniHakkero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Unity\\Unity Game\\VampSurvivor\\Assets\\Script\\MiniHakkero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -110,15 +117,41 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
+              "Title": "Talisman.cs",
+              "DocumentMoniker": "C:\\Unity\\Unity Game\\TouhouSurvivor\\Assets\\Script\\Talisman.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Talisman.cs",
+              "ToolTip": "C:\\Unity\\Unity Game\\TouhouSurvivor\\Assets\\Script\\Talisman.cs",
+              "RelativeToolTip": "Assets\\Script\\Talisman.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAiwHMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T16:59:38.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "OrbitWeapon.cs",
-              "DocumentMoniker": "C:\\Unity\\Unity Game\\VampSurvivor\\Assets\\Script\\OrbitWeapon.cs",
+              "DocumentMoniker": "C:\\Unity\\Unity Game\\TouhouSurvivor\\Assets\\Script\\OrbitWeapon.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\OrbitWeapon.cs",
-              "ToolTip": "C:\\Unity\\Unity Game\\VampSurvivor\\Assets\\Script\\OrbitWeapon.cs",
+              "ToolTip": "C:\\Unity\\Unity Game\\TouhouSurvivor\\Assets\\Script\\OrbitWeapon.cs",
+              "RelativeToolTip": "Assets\\Script\\OrbitWeapon.cs",
+              "ViewState": "AgIAALAAAAAAAAAAAAAjwNgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T15:40:56.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrbitWeapon.cs",
+              "DocumentMoniker": "C:\\Unity\\Unity Game\\TouhouSurvivor\\Assets\\Script\\OrbitWeapon.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\OrbitWeapon.cs",
+              "ToolTip": "C:\\Unity\\Unity Game\\TouhouSurvivor\\Assets\\Script\\OrbitWeapon.cs",
               "RelativeToolTip": "Assets\\Script\\OrbitWeapon.cs",
               "ViewState": "AgIAAKcAAAAAAAAAAAAjwNgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -128,22 +161,21 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Talisman.cs",
-              "DocumentMoniker": "C:\\Unity\\Unity Game\\VampSurvivor\\Assets\\Script\\Talisman.cs",
+              "DocumentMoniker": "C:\\Unity\\Unity Game\\TouhouSurvivor\\Assets\\Script\\Talisman.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\Talisman.cs",
-              "ToolTip": "C:\\Unity\\Unity Game\\VampSurvivor\\Assets\\Script\\Talisman.cs",
+              "ToolTip": "C:\\Unity\\Unity Game\\TouhouSurvivor\\Assets\\Script\\Talisman.cs",
               "RelativeToolTip": "Assets\\Script\\Talisman.cs",
               "ViewState": "AgIAADYAAAAAAAAAAAAYwEAAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-28T17:58:15.704Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-28T17:58:15.704Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "ProjectileWeaponData.cs",
-              "DocumentMoniker": "C:\\Unity\\Unity Game\\VampSurvivor\\Assets\\Script\\ScriptableObject\\ProjectileWeaponData.cs",
+              "DocumentMoniker": "C:\\Unity\\Unity Game\\TouhouSurvivor\\Assets\\Script\\ScriptableObject\\ProjectileWeaponData.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\ScriptableObject\\ProjectileWeaponData.cs",
-              "ToolTip": "C:\\Unity\\Unity Game\\VampSurvivor\\Assets\\Script\\ScriptableObject\\ProjectileWeaponData.cs",
+              "ToolTip": "C:\\Unity\\Unity Game\\TouhouSurvivor\\Assets\\Script\\ScriptableObject\\ProjectileWeaponData.cs",
               "RelativeToolTip": "Assets\\Script\\ScriptableObject\\ProjectileWeaponData.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -151,11 +183,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "ProjectileWeapon.cs",
-              "DocumentMoniker": "C:\\Unity\\Unity Game\\VampSurvivor\\Assets\\Script\\ProjectileWeapon.cs",
+              "DocumentMoniker": "C:\\Unity\\Unity Game\\TouhouSurvivor\\Assets\\Script\\ProjectileWeapon.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\ProjectileWeapon.cs",
-              "ToolTip": "C:\\Unity\\Unity Game\\VampSurvivor\\Assets\\Script\\ProjectileWeapon.cs",
+              "ToolTip": "C:\\Unity\\Unity Game\\TouhouSurvivor\\Assets\\Script\\ProjectileWeapon.cs",
               "RelativeToolTip": "Assets\\Script\\ProjectileWeapon.cs",
               "ViewState": "AgIAAGgAAAAAAAAAAAAwwHkAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -163,11 +195,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "ProjectileWeaponRuntimeStats.cs",
-              "DocumentMoniker": "C:\\Unity\\Unity Game\\VampSurvivor\\Assets\\Script\\ProjectileWeaponRuntimeStats.cs",
+              "DocumentMoniker": "C:\\Unity\\Unity Game\\TouhouSurvivor\\Assets\\Script\\ProjectileWeaponRuntimeStats.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\ProjectileWeaponRuntimeStats.cs",
-              "ToolTip": "C:\\Unity\\Unity Game\\VampSurvivor\\Assets\\Script\\ProjectileWeaponRuntimeStats.cs",
+              "ToolTip": "C:\\Unity\\Unity Game\\TouhouSurvivor\\Assets\\Script\\ProjectileWeaponRuntimeStats.cs",
               "RelativeToolTip": "Assets\\Script\\ProjectileWeaponRuntimeStats.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -175,11 +207,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "WeaponData.cs",
-              "DocumentMoniker": "C:\\Unity\\Unity Game\\VampSurvivor\\Assets\\Script\\ScriptableObject\\WeaponData.cs",
+              "DocumentMoniker": "C:\\Unity\\Unity Game\\TouhouSurvivor\\Assets\\Script\\ScriptableObject\\WeaponData.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\ScriptableObject\\WeaponData.cs",
-              "ToolTip": "C:\\Unity\\Unity Game\\VampSurvivor\\Assets\\Script\\ScriptableObject\\WeaponData.cs",
+              "ToolTip": "C:\\Unity\\Unity Game\\TouhouSurvivor\\Assets\\Script\\ScriptableObject\\WeaponData.cs",
               "RelativeToolTip": "Assets\\Script\\ScriptableObject\\WeaponData.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -187,11 +219,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "OrbitWeaponData.cs",
-              "DocumentMoniker": "C:\\Unity\\Unity Game\\VampSurvivor\\Assets\\Script\\ScriptableObject\\OrbitWeaponData.cs",
+              "DocumentMoniker": "C:\\Unity\\Unity Game\\TouhouSurvivor\\Assets\\Script\\ScriptableObject\\OrbitWeaponData.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\ScriptableObject\\OrbitWeaponData.cs",
-              "ToolTip": "C:\\Unity\\Unity Game\\VampSurvivor\\Assets\\Script\\ScriptableObject\\OrbitWeaponData.cs",
+              "ToolTip": "C:\\Unity\\Unity Game\\TouhouSurvivor\\Assets\\Script\\ScriptableObject\\OrbitWeaponData.cs",
               "RelativeToolTip": "Assets\\Script\\ScriptableObject\\OrbitWeaponData.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -199,36 +231,35 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "CharacterInitializer.cs",
-              "DocumentMoniker": "C:\\Unity\\Unity Game\\VampSurvivor\\Assets\\Script\\CharacterInitializer.cs",
+              "DocumentMoniker": "C:\\Unity\\Unity Game\\TouhouSurvivor\\Assets\\Script\\CharacterInitializer.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\CharacterInitializer.cs",
-              "ToolTip": "C:\\Unity\\Unity Game\\VampSurvivor\\Assets\\Script\\CharacterInitializer.cs",
+              "ToolTip": "C:\\Unity\\Unity Game\\TouhouSurvivor\\Assets\\Script\\CharacterInitializer.cs",
               "RelativeToolTip": "Assets\\Script\\CharacterInitializer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-03T18:41:23.486Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-03T18:41:23.486Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "MiniHakkero.cs",
               "DocumentMoniker": "C:\\Unity\\Unity Game\\VampSurvivor\\Assets\\Script\\MiniHakkero.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\MiniHakkero.cs",
+              "RelativeDocumentMoniker": "..\\VampSurvivor\\Assets\\Script\\MiniHakkero.cs",
               "ToolTip": "C:\\Unity\\Unity Game\\VampSurvivor\\Assets\\Script\\MiniHakkero.cs",
-              "RelativeToolTip": "Assets\\Script\\MiniHakkero.cs",
+              "RelativeToolTip": "..\\VampSurvivor\\Assets\\Script\\MiniHakkero.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-27T14:54:37.081Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "MobileJoystickUI.cs",
-              "DocumentMoniker": "C:\\Unity\\Unity Game\\VampSurvivor\\Assets\\Script\\MobileJoystickUI.cs",
+              "DocumentMoniker": "C:\\Unity\\Unity Game\\TouhouSurvivor\\Assets\\Script\\MobileJoystickUI.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\MobileJoystickUI.cs",
-              "ToolTip": "C:\\Unity\\Unity Game\\VampSurvivor\\Assets\\Script\\MobileJoystickUI.cs",
+              "ToolTip": "C:\\Unity\\Unity Game\\TouhouSurvivor\\Assets\\Script\\MobileJoystickUI.cs",
               "RelativeToolTip": "Assets\\Script\\MobileJoystickUI.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAASwBYAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -236,11 +267,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "PlayerSpawner.cs",
-              "DocumentMoniker": "C:\\Unity\\Unity Game\\VampSurvivor\\Assets\\Script\\PlayerSpawner.cs",
+              "DocumentMoniker": "C:\\Unity\\Unity Game\\TouhouSurvivor\\Assets\\Script\\PlayerSpawner.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\PlayerSpawner.cs",
-              "ToolTip": "C:\\Unity\\Unity Game\\VampSurvivor\\Assets\\Script\\PlayerSpawner.cs",
+              "ToolTip": "C:\\Unity\\Unity Game\\TouhouSurvivor\\Assets\\Script\\PlayerSpawner.cs",
               "RelativeToolTip": "Assets\\Script\\PlayerSpawner.cs",
               "ViewState": "AgIAABoAAAAAAAAAAAAgwDkAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -248,11 +279,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "WeaponManager.cs",
-              "DocumentMoniker": "C:\\Unity\\Unity Game\\VampSurvivor\\Assets\\Script\\WeaponManager.cs",
+              "DocumentMoniker": "C:\\Unity\\Unity Game\\TouhouSurvivor\\Assets\\Script\\WeaponManager.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\WeaponManager.cs",
-              "ToolTip": "C:\\Unity\\Unity Game\\VampSurvivor\\Assets\\Script\\WeaponManager.cs",
+              "ToolTip": "C:\\Unity\\Unity Game\\TouhouSurvivor\\Assets\\Script\\WeaponManager.cs",
               "RelativeToolTip": "Assets\\Script\\WeaponManager.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAowDoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -260,11 +291,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Weapons.cs",
-              "DocumentMoniker": "C:\\Unity\\Unity Game\\VampSurvivor\\Assets\\Script\\Weapons.cs",
+              "DocumentMoniker": "C:\\Unity\\Unity Game\\TouhouSurvivor\\Assets\\Script\\Weapons.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\Weapons.cs",
-              "ToolTip": "C:\\Unity\\Unity Game\\VampSurvivor\\Assets\\Script\\Weapons.cs",
+              "ToolTip": "C:\\Unity\\Unity Game\\TouhouSurvivor\\Assets\\Script\\Weapons.cs",
               "RelativeToolTip": "Assets\\Script\\Weapons.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -272,11 +303,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "WeaponAdd.cs",
-              "DocumentMoniker": "C:\\Unity\\Unity Game\\VampSurvivor\\Assets\\Script\\WeaponAdd.cs",
+              "DocumentMoniker": "C:\\Unity\\Unity Game\\TouhouSurvivor\\Assets\\Script\\WeaponAdd.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\WeaponAdd.cs",
-              "ToolTip": "C:\\Unity\\Unity Game\\VampSurvivor\\Assets\\Script\\WeaponAdd.cs",
+              "ToolTip": "C:\\Unity\\Unity Game\\TouhouSurvivor\\Assets\\Script\\WeaponAdd.cs",
               "RelativeToolTip": "Assets\\Script\\WeaponAdd.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -284,11 +315,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "CharacterData.cs",
-              "DocumentMoniker": "C:\\Unity\\Unity Game\\VampSurvivor\\Assets\\Script\\ScriptableObject\\CharacterData.cs",
+              "DocumentMoniker": "C:\\Unity\\Unity Game\\TouhouSurvivor\\Assets\\Script\\ScriptableObject\\CharacterData.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\ScriptableObject\\CharacterData.cs",
-              "ToolTip": "C:\\Unity\\Unity Game\\VampSurvivor\\Assets\\Script\\ScriptableObject\\CharacterData.cs",
+              "ToolTip": "C:\\Unity\\Unity Game\\TouhouSurvivor\\Assets\\Script\\ScriptableObject\\CharacterData.cs",
               "RelativeToolTip": "Assets\\Script\\ScriptableObject\\CharacterData.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -296,11 +327,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "PlayerAttack.cs",
-              "DocumentMoniker": "C:\\Unity\\Unity Game\\VampSurvivor\\Assets\\Script\\PlayerAttack.cs",
+              "DocumentMoniker": "C:\\Unity\\Unity Game\\TouhouSurvivor\\Assets\\Script\\PlayerAttack.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\PlayerAttack.cs",
-              "ToolTip": "C:\\Unity\\Unity Game\\VampSurvivor\\Assets\\Script\\PlayerAttack.cs",
+              "ToolTip": "C:\\Unity\\Unity Game\\TouhouSurvivor\\Assets\\Script\\PlayerAttack.cs",
               "RelativeToolTip": "Assets\\Script\\PlayerAttack.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -308,11 +339,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "CharacterSelectionManager.cs",
-              "DocumentMoniker": "C:\\Unity\\Unity Game\\VampSurvivor\\Assets\\Script\\CharacterSelectionManager.cs",
+              "DocumentMoniker": "C:\\Unity\\Unity Game\\TouhouSurvivor\\Assets\\Script\\CharacterSelectionManager.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\CharacterSelectionManager.cs",
-              "ToolTip": "C:\\Unity\\Unity Game\\VampSurvivor\\Assets\\Script\\CharacterSelectionManager.cs",
+              "ToolTip": "C:\\Unity\\Unity Game\\TouhouSurvivor\\Assets\\Script\\CharacterSelectionManager.cs",
               "RelativeToolTip": "Assets\\Script\\CharacterSelectionManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -320,11 +351,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "UltimateController.cs",
-              "DocumentMoniker": "C:\\Unity\\Unity Game\\VampSurvivor\\Assets\\Script\\UltimateController.cs",
+              "DocumentMoniker": "C:\\Unity\\Unity Game\\TouhouSurvivor\\Assets\\Script\\UltimateController.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\UltimateController.cs",
-              "ToolTip": "C:\\Unity\\Unity Game\\VampSurvivor\\Assets\\Script\\UltimateController.cs",
+              "ToolTip": "C:\\Unity\\Unity Game\\TouhouSurvivor\\Assets\\Script\\UltimateController.cs",
               "RelativeToolTip": "Assets\\Script\\UltimateController.cs",
               "ViewState": "AgIAACcAAAAAAAAAAAA7wAkAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -332,11 +363,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "EnemyManager.cs",
-              "DocumentMoniker": "C:\\Unity\\Unity Game\\VampSurvivor\\Assets\\Script\\EnemyManager.cs",
+              "DocumentMoniker": "C:\\Unity\\Unity Game\\TouhouSurvivor\\Assets\\Script\\EnemyManager.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\EnemyManager.cs",
-              "ToolTip": "C:\\Unity\\Unity Game\\VampSurvivor\\Assets\\Script\\EnemyManager.cs",
+              "ToolTip": "C:\\Unity\\Unity Game\\TouhouSurvivor\\Assets\\Script\\EnemyManager.cs",
               "RelativeToolTip": "Assets\\Script\\EnemyManager.cs",
               "ViewState": "AgIAADcAAAAAAAAAAAAkwG0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -344,11 +375,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "FollowCamera.cs",
-              "DocumentMoniker": "C:\\Unity\\Unity Game\\VampSurvivor\\Assets\\Script\\FollowCamera.cs",
+              "DocumentMoniker": "C:\\Unity\\Unity Game\\TouhouSurvivor\\Assets\\Script\\FollowCamera.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\FollowCamera.cs",
-              "ToolTip": "C:\\Unity\\Unity Game\\VampSurvivor\\Assets\\Script\\FollowCamera.cs",
+              "ToolTip": "C:\\Unity\\Unity Game\\TouhouSurvivor\\Assets\\Script\\FollowCamera.cs",
               "RelativeToolTip": "Assets\\Script\\FollowCamera.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -356,11 +387,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "PlayerController.cs",
-              "DocumentMoniker": "C:\\Unity\\Unity Game\\VampSurvivor\\Assets\\Script\\PlayerController.cs",
+              "DocumentMoniker": "C:\\Unity\\Unity Game\\TouhouSurvivor\\Assets\\Script\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\PlayerController.cs",
-              "ToolTip": "C:\\Unity\\Unity Game\\VampSurvivor\\Assets\\Script\\PlayerController.cs",
+              "ToolTip": "C:\\Unity\\Unity Game\\TouhouSurvivor\\Assets\\Script\\PlayerController.cs",
               "RelativeToolTip": "Assets\\Script\\PlayerController.cs",
               "ViewState": "AgIAAGcAAAAAAAAAAAAcwHYAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -368,11 +399,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "UltimateData.cs",
-              "DocumentMoniker": "C:\\Unity\\Unity Game\\VampSurvivor\\Assets\\Script\\ScriptableObject\\UltimateData.cs",
+              "DocumentMoniker": "C:\\Unity\\Unity Game\\TouhouSurvivor\\Assets\\Script\\ScriptableObject\\UltimateData.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\ScriptableObject\\UltimateData.cs",
-              "ToolTip": "C:\\Unity\\Unity Game\\VampSurvivor\\Assets\\Script\\ScriptableObject\\UltimateData.cs",
+              "ToolTip": "C:\\Unity\\Unity Game\\TouhouSurvivor\\Assets\\Script\\ScriptableObject\\UltimateData.cs",
               "RelativeToolTip": "Assets\\Script\\ScriptableObject\\UltimateData.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -380,11 +411,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "ExplosionUltimate.cs",
-              "DocumentMoniker": "C:\\Unity\\Unity Game\\VampSurvivor\\Assets\\Script\\ExplosionUltimate.cs",
+              "DocumentMoniker": "C:\\Unity\\Unity Game\\TouhouSurvivor\\Assets\\Script\\ExplosionUltimate.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\ExplosionUltimate.cs",
-              "ToolTip": "C:\\Unity\\Unity Game\\VampSurvivor\\Assets\\Script\\ExplosionUltimate.cs",
+              "ToolTip": "C:\\Unity\\Unity Game\\TouhouSurvivor\\Assets\\Script\\ExplosionUltimate.cs",
               "RelativeToolTip": "Assets\\Script\\ExplosionUltimate.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -392,11 +423,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "Enemy.cs",
-              "DocumentMoniker": "C:\\Unity\\Unity Game\\VampSurvivor\\Assets\\Script\\Enemy.cs",
+              "DocumentMoniker": "C:\\Unity\\Unity Game\\TouhouSurvivor\\Assets\\Script\\Enemy.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\Enemy.cs",
-              "ToolTip": "C:\\Unity\\Unity Game\\VampSurvivor\\Assets\\Script\\Enemy.cs",
+              "ToolTip": "C:\\Unity\\Unity Game\\TouhouSurvivor\\Assets\\Script\\Enemy.cs",
               "RelativeToolTip": "Assets\\Script\\Enemy.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAYwCkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -404,11 +435,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "OrbitWeaponRuntimeStats.cs",
-              "DocumentMoniker": "C:\\Unity\\Unity Game\\VampSurvivor\\Assets\\Script\\OrbitWeaponRuntimeStats.cs",
+              "DocumentMoniker": "C:\\Unity\\Unity Game\\TouhouSurvivor\\Assets\\Script\\OrbitWeaponRuntimeStats.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\OrbitWeaponRuntimeStats.cs",
-              "ToolTip": "C:\\Unity\\Unity Game\\VampSurvivor\\Assets\\Script\\OrbitWeaponRuntimeStats.cs",
+              "ToolTip": "C:\\Unity\\Unity Game\\TouhouSurvivor\\Assets\\Script\\OrbitWeaponRuntimeStats.cs",
               "RelativeToolTip": "Assets\\Script\\OrbitWeaponRuntimeStats.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

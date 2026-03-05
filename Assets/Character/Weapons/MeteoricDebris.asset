@@ -19,12 +19,16 @@ MonoBehaviour:
   baseKnockback: 5
   baseKnockbackDuration: 0.15
   baseHitCooldown: 0.3
-  projectilePrefab: {fileID: 0}
+  projectilePrefab: {fileID: 3862422271202098067, guid: 85bff9214e6c1dc4399cb5cd2a7ee0ad,
+    type: 3}
   attackInterval: 1
   projectileSpeed: 8
-  projectileCount: 5
+  spreadCount: 1
   coneAngle: 30
-  useHoming: 0
-  homingStrength: 5
+  burstCount: 5
+  delayBetweenBursts: 0.08
   waveCount: 1
   waveInterval: 0.15
+  useHoming: 0
+  homingStrength: 5
+  requireEnemyToShoot: 0
