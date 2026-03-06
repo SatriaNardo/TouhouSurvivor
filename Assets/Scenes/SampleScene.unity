@@ -817,6 +817,7 @@ MonoBehaviour:
   choosenCharacter: {fileID: 11400000, guid: bb946da4efbb353479aecfcc2c06c94b, type: 2}
   followCamera: {fileID: 519420033}
   enemyManager: {fileID: 432246670}
+  ultimateController: {fileID: 1225830796}
 --- !u!4 &773382498
 Transform:
   m_ObjectHideFlags: 0

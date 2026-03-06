@@ -11,6 +11,8 @@ public class PlayerSpawner : MonoBehaviour
     public FollowCamera followCamera;
     public EnemyManager enemyManager;
 
+    public UltimateController ultimateController;
+
     void Start()
     {
         SelectCharacter(choosenCharacter);
@@ -44,6 +46,8 @@ public class PlayerSpawner : MonoBehaviour
         }
 
         Transform playerTransform = player.transform;
+
+        ultimateController.player = player;
 
         // Assign Camera target
         if (followCamera != null)

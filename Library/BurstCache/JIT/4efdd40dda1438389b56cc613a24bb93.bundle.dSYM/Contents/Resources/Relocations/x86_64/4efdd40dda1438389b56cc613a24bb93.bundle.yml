@@ -1,0 +1,9 @@
+---
+triple:          'x86_64-apple-darwin'
+binary-path:     '/Applications/Unity/Game/TouhouSurvivor/Temp/Burst/burst-aotsw3vijqv.w6j/4efdd40dda1438389b56cc613a24bb93.bundle'
+relocations:
+  - { offset: 0x1E, size: 0x8, addend: 0x0, symName: '_Unity.Burst.Intrinsics.X86.DoSetCSRTrampoline(int bits) -> void_04e29893c280be41d059438ef7569e87 from Unity.Burst, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null', symObjAddr: 0x30, symBinAddr: 0x360, symSize: 0xD }
+  - { offset: 0x37, size: 0x8, addend: 0x0, symName: '_Unity.Burst.Intrinsics.X86.DoSetCSRTrampoline(int bits) -> void_04e29893c280be41d059438ef7569e87 from Unity.Burst, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null', symObjAddr: 0x30, symBinAddr: 0x360, symSize: 0xD }
+  - { offset: 0x8E, size: 0x8, addend: 0x0, symName: '_Unity.Burst.Intrinsics.X86.DoGetCSRTrampoline() -> int_04e29893c280be41d059438ef7569e87 from Unity.Burst, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null', symObjAddr: 0x30, symBinAddr: 0x3A0, symSize: 0xD }
+  - { offset: 0xA7, size: 0x8, addend: 0x0, symName: '_Unity.Burst.Intrinsics.X86.DoGetCSRTrampoline() -> int_04e29893c280be41d059438ef7569e87 from Unity.Burst, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null', symObjAddr: 0x30, symBinAddr: 0x3A0, symSize: 0xD }
+...

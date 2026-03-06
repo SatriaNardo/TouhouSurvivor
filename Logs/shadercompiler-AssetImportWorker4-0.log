@@ -1,26 +1,4 @@
-Base path: 'C:/Unity/Unity/6000.3.10f1/Editor/Data', plugins path 'C:/Unity/Unity/6000.3.10f1/Editor/Data/PlaybackEngines', jobs: y
-Cmd: initializeCompiler
-
-Cmd: initializeCompiler
-
-Cmd: initializeCompiler
-
-Cmd: initializeCompiler
-
-Cmd: initializeCompiler
-
-Cmd: initializeCompiler
-
-Cmd: initializeCompiler
-
-Cmd: initializeCompiler
-
-Cmd: initializeCompiler
-
-Cmd: initializeCompiler
-
-Cmd: initializeCompiler
-
+Base path: '/Applications/Unity/Hub/Editor/6000.3.10f1/Unity.app/Contents', plugins path '/Applications/Unity/Hub/Editor/6000.3.10f1/PlaybackEngines', jobs: y
 Cmd: initializeCompiler
 
 Cmd: initializeCompiler
