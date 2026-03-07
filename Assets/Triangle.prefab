@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8292936716899646995}
   - component: {fileID: 1173181449937431376}
   - component: {fileID: 1291458373015028336}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Triangle
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -185,5 +185,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
   maxHealth: 2
-  knockbackForce: 3
   flashDuration: 0.1

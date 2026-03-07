@@ -1,1 +1,1 @@
-/Applications/Unity/Game/TouhouSurvivor
+C:\Unity\Unity Game\TouhouSurvivor

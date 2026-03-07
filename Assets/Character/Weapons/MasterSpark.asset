@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: MasterSpark
   m_EditorClassIdentifier: Assembly-CSharp::LaserUltimate
   ultimateName: MasterSpark
-  cooldown: 10
+  cooldown: 15
   laserPrefab: {fileID: 1720095623625371453, guid: aef91e31770c24489830401537df5eed,
     type: 3}
-  duration: 3
+  duration: 6
   damage: 30
   hitCooldown: 0.3
-  distanceFromPlayer: 3
+  distanceFromPlayer: 13

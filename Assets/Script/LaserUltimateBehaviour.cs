@@ -9,6 +9,7 @@ public class LaserUltimateBehaviour : MonoBehaviour
     private float duration;
     private float damage;
     private float hitCooldown;
+    private float distanceFromPlayer;
 
     private float timer;
 
@@ -28,14 +29,21 @@ public class LaserUltimateBehaviour : MonoBehaviour
     private float chargeTimer;
     private bool laserActive = false;
 
-    // ================= INITIALIZE =================
+    [Header("Rotation")]
+    public float rotationSpeed = 240f;
+
+    private float currentAngle;
+    private float targetAngle;
+
+    [Header("Repel")]
+    public LaserRepelCollider repelCollider;
 
     public void Initialize(
         Transform playerTransform,
         float dur,
         float dmg,
         float cooldown,
-        float distanceFromPlayer
+        float distance
     )
     {
         player = playerTransform;
@@ -46,6 +54,7 @@ public class LaserUltimateBehaviour : MonoBehaviour
         duration = dur;
         damage = dmg;
         hitCooldown = cooldown;
+        distanceFromPlayer = distance;
 
         timer = duration;
 
@@ -53,17 +62,41 @@ public class LaserUltimateBehaviour : MonoBehaviour
             laserVisual = transform;
 
         baseScale = laserVisual.localScale;
-
-        // Start as small circle
         laserVisual.localScale = Vector3.zero;
 
         chargeTimer = chargeTime;
 
-        // Parent to player so it always follows player
         transform.SetParent(player);
-        transform.localPosition = Vector3.zero;
-    }
 
+        // ======= FIXED INITIAL DIRECTION =======
+
+        if (playerController != null)
+        {
+            // Use MoveDirection if available
+            if (playerController.MoveDirection != Vector2.zero)
+                lastMoveDirection = playerController.MoveDirection.normalized;
+            // Otherwise fallback to stored last move in player controller
+            else if (playerController.LastMoveDirection != Vector2.zero)
+                lastMoveDirection = playerController.LastMoveDirection.normalized;
+        }
+
+        // Compute initial angles
+        currentAngle =
+            Mathf.Atan2(lastMoveDirection.y, lastMoveDirection.x)
+            * Mathf.Rad2Deg + 90f;
+
+        targetAngle = currentAngle;
+
+        transform.rotation = Quaternion.Euler(0, 0, currentAngle);
+
+        Vector3 offset =
+            new Vector3(lastMoveDirection.x, lastMoveDirection.y, 0) * distanceFromPlayer;
+
+        transform.localPosition = offset;
+
+        if (repelCollider != null)
+            repelCollider.player = player;
+    }
     // ================= UPDATE =================
 
     void Update()
@@ -74,49 +107,53 @@ public class LaserUltimateBehaviour : MonoBehaviour
             return;
         }
 
-        // ================= GET PLAYER DIRECTION =================
+        // ===== GET PLAYER DIRECTION =====
 
         if (playerController != null &&
             playerController.MoveDirection != Vector2.zero)
-            {
-            lastMoveDirection = playerController.MoveDirection.normalized;
-            }
+        {
+            lastMoveDirection =
+                playerController.MoveDirection.normalized;
+        }
 
-        float angle =
-        Mathf.Atan2(
-            lastMoveDirection.y,
-            lastMoveDirection.x
-            ) * Mathf.Rad2Deg;
+        targetAngle =
+            Mathf.Atan2(
+                lastMoveDirection.y,
+                lastMoveDirection.x
+            ) * Mathf.Rad2Deg + 90f;
 
-        // add 90 degree offset
-        float correctedAngle = angle + 90f;
+        // ===== HEAVY ROTATION =====
 
-        Quaternion targetRotation =
-            Quaternion.Euler(0, 0, correctedAngle);
-
-        // Smooth rotation
-        transform.rotation =
-            Quaternion.RotateTowards(
-                transform.rotation,
-                targetRotation,
-                720f * Time.deltaTime
+        currentAngle =
+            Mathf.MoveTowardsAngle(
+                currentAngle,
+                targetAngle,
+                rotationSpeed * Time.deltaTime
             );
 
-        // ================= CHARGE ANIMATION =================
+        transform.rotation =
+            Quaternion.Euler(0, 0, currentAngle);
 
+        // ===== TRUE ORBIT ROTATION =====
+
+        float rad = (currentAngle - 90f) * Mathf.Deg2Rad;
+
+        Vector3 offset =
+            new Vector3(
+                Mathf.Cos(rad),
+                Mathf.Sin(rad),
+                0
+            ) * distanceFromPlayer;
+
+        transform.localPosition = offset;
+
+        // ===== UPDATE LASER =====
         if (!laserActive)
         {
+            // Charge animation (growing)
             chargeTimer -= Time.deltaTime;
-
-            float progress =
-                1f - (chargeTimer / chargeTime);
-
-            laserVisual.localScale =
-                Vector3.Lerp(
-                    Vector3.zero,
-                    baseScale,
-                    progress
-                );
+            float progress = 1f - (chargeTimer / chargeTime);
+            laserVisual.localScale = Vector3.Lerp(Vector3.zero, baseScale, progress);
 
             if (chargeTimer <= 0f)
                 laserActive = true;
@@ -124,26 +161,27 @@ public class LaserUltimateBehaviour : MonoBehaviour
             return;
         }
 
-        // ================= PULSE ANIMATION =================
+        if (timer > 0f)
+        {
+            // ===== PULSE =====
+            float pulse = 1f + Mathf.Sin(Time.time * pulseSpeed) * pulseAmount;
+            laserVisual.localScale = new Vector3(baseScale.x * pulse, baseScale.y, baseScale.z);
 
-        float pulse =
-            1f +
-            Mathf.Sin(Time.time * pulseSpeed)
-            * pulseAmount;
+            // ===== LIFETIME COUNTDOWN =====
+            timer -= Time.deltaTime;
+        }
+        else
+        {
+            // ===== REVERSE CHARGE (SHRINK) =====
+            chargeTimer += Time.deltaTime; // count back up
+            float progress = Mathf.Clamp01(1f - (chargeTimer / chargeTime));
+            laserVisual.localScale = Vector3.Lerp(Vector3.zero, baseScale, progress);
 
-        laserVisual.localScale =
-            new Vector3(
-                baseScale.x,
-                baseScale.y * pulse,
-                baseScale.z
-            );
-
-        // ================= LIFETIME =================
-
-        timer -= Time.deltaTime;
-
-        if (timer <= 0f)
-            Destroy(gameObject);
+            if (progress <= 0f)
+            {
+                Destroy(gameObject); // fully shrunk, safe to destroy
+            }
+        }
     }
 
     // ================= DAMAGE =================

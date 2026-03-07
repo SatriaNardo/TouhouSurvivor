@@ -27,6 +27,10 @@ public class PlayerController : MonoBehaviour
     private PlayerInputActions inputActions;
     private Vector2 keyboardInput;
 
+    // ===== NEW =====
+    private Vector2 lastMoveDirection = Vector2.right;
+    public Vector2 LastMoveDirection => lastMoveDirection;
+
     public Vector2 MoveDirection => (touchInput + keyboardInput).normalized;
 
     void Awake()
@@ -69,6 +73,13 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         HandleTouch();
+
+        // ===== TRACK LAST MOVE DIRECTION =====
+        Vector2 combined = touchInput + keyboardInput;
+        if (combined != Vector2.zero)
+        {
+            lastMoveDirection = combined.normalized;
+        }
     }
 
     void FixedUpdate()
@@ -137,6 +148,7 @@ public class PlayerController : MonoBehaviour
         if (!anyTouchPressed)
             StopJoystick();
     }
+
     public void SetupJoystick(RectTransform root, RectTransform handle, float radius)
     {
         joystickRoot = root;
@@ -146,6 +158,7 @@ public class PlayerController : MonoBehaviour
         if (joystickRoot != null)
             joystickRoot.gameObject.SetActive(false);
     }
+
     void StopJoystick()
     {
         isDragging = false;
