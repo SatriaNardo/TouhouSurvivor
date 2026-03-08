@@ -27,6 +27,10 @@ public class PlayerController : MonoBehaviour
     private PlayerInputActions inputActions;
     private Vector2 keyboardInput;
 
+    // Forced movement (abilities)
+    private bool forceSpeedActive = false;
+    private float forcedSpeed;
+
     // ===== NEW =====
     private Vector2 lastMoveDirection = Vector2.right;
     public Vector2 LastMoveDirection => lastMoveDirection;
@@ -174,16 +178,49 @@ public class PlayerController : MonoBehaviour
 
     void ApplyMovement()
     {
-        // Combine keyboard + touch safely
-        Vector2 finalInput = touchInput + keyboardInput;
-        finalInput = Vector2.ClampMagnitude(finalInput, 1f);
+        Vector2 input = touchInput + keyboardInput;
+        input = Vector2.ClampMagnitude(input, 1f);
 
-        Vector2 targetVelocity = finalInput * maxSpeed;
+        Vector2 direction;
+        float speed;
+
+        if (forceSpeedActive)
+        {
+            // Player must move but can steer
+            if (input.sqrMagnitude > 0.01f)
+                direction = input.normalized;
+            else
+                direction = lastMoveDirection;
+
+            speed = forcedSpeed;
+        }
+        else
+        {
+            // Normal movement
+            direction = input;
+            speed = maxSpeed;
+        }
+
+        Vector2 targetVelocity = direction * speed;
 
         rb.linearVelocity = Vector2.Lerp(
             rb.linearVelocity,
             targetVelocity,
             smoothness * Time.fixedDeltaTime
         );
+    }
+
+    public void StartForcedSpeed(float speed)
+    {
+        forceSpeedActive = true;
+        forcedSpeed = speed;
+    }
+
+    public void StopForcedSpeed()
+    {
+        forceSpeedActive = false;
+
+        if (rb != null)
+            rb.linearVelocity = Vector2.zero;
     }
 }
