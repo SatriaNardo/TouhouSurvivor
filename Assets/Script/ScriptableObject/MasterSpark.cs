@@ -16,7 +16,23 @@ public class MasterSpark : UltimateData
         if (laserPrefab == null || user == null)
             return;
 
-        // Spawn as CHILD of player
+        UltimateController controller = Object.FindFirstObjectByType<UltimateController>();
+        UltimateRuntimeStats stats = controller.GetRuntimeStats(this);
+
+        float finalDamage =
+            UltimateStatCalculator.GetStat(
+                damage,
+                UltimateUpgradeType.Damage,
+                stats
+            );
+
+        float finalDuration =
+            UltimateStatCalculator.GetStat(
+                duration,
+                UltimateUpgradeType.Duration,
+                stats
+            );
+
         GameObject obj = Instantiate(
             laserPrefab,
             user.transform.position,
@@ -31,8 +47,8 @@ public class MasterSpark : UltimateData
         {
             spark.Initialize(
                 user.transform,
-                duration,
-                damage,
+                finalDuration,
+                finalDamage,
                 hitCooldown,
                 distanceFromPlayer
             );

@@ -6,5 +6,8 @@ public abstract class UltimateData : ScriptableObject
     public string ultimateName;
     public float cooldown = 10f;
 
+    [Header("Upgrades")]
+    public UltimateUpgrade[] upgrades;
+
     public abstract void Activate(GameObject user);
 }

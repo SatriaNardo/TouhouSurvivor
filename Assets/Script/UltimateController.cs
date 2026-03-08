@@ -1,19 +1,27 @@
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.InputSystem;
-
+using UnityEngine.UI;
 public class UltimateController : MonoBehaviour
 {
     [Header("References")]
     public GameObject player;             
     public Button ultimateButton;         
-    public Image cooldownImage;         
+    public Image cooldownImage;
 
     private PlayerInputActions inputActions;
     private UltimateData equippedUltimate;
 
+    [Header("DEBUG ULTIMATE STATS")]
+    public UltimateData debugUltimate;
+    public UltimateDebugStats debugStats;
+
     private float cooldownTimer = 0f;
     private bool isReady = true;
+
+    // Runtime upgrade stats for each ultimate
+    private Dictionary<UltimateData, UltimateRuntimeStats> runtimeStats
+        = new Dictionary<UltimateData, UltimateRuntimeStats>();
 
     void Awake()
     {
@@ -77,7 +85,13 @@ public class UltimateController : MonoBehaviour
         equippedUltimate.Activate(player);
 
         isReady = false;
-        cooldownTimer = equippedUltimate.cooldown;
+        UltimateRuntimeStats stats = GetRuntimeStats(equippedUltimate);
+
+        cooldownTimer = UltimateStatCalculator.GetStat(
+                        equippedUltimate.cooldown,
+                        UltimateUpgradeType.Cooldown,
+                        stats
+                        );
 
         if (ultimateButton != null)
             ultimateButton.interactable = false;
@@ -90,11 +104,17 @@ public class UltimateController : MonoBehaviour
         if (isReady || equippedUltimate == null)
             return;
 
+        UltimateRuntimeStats stats = GetRuntimeStats(equippedUltimate);
+
         cooldownTimer -= Time.deltaTime;
 
         if (cooldownImage != null)
-            cooldownImage.fillAmount =
-                cooldownTimer / equippedUltimate.cooldown;
+            cooldownImage.fillAmount = cooldownTimer /
+            UltimateStatCalculator.GetStat(
+                        equippedUltimate.cooldown,
+                        UltimateUpgradeType.Cooldown,
+                        stats
+                        );
 
         if (cooldownTimer <= 0f)
         {
@@ -118,5 +138,51 @@ public class UltimateController : MonoBehaviour
 
         if (ultimateButton != null)
             ultimateButton.interactable = true;
+    }
+    public UltimateRuntimeStats GetRuntimeStats(UltimateData ultimate)
+    {
+        if (!runtimeStats.ContainsKey(ultimate))
+        {
+            UltimateRuntimeStats stats = new UltimateRuntimeStats();
+
+            if (ultimate == debugUltimate)
+            {
+                stats.durationBonus = debugStats.durationBonus;
+                stats.damageBonus = debugStats.damageBonus;
+                stats.cooldownReduction = debugStats.cooldownReduction;
+
+                stats.speedMultiplierBonus = debugStats.speedMultiplierBonus;
+                stats.orbCountBonus = debugStats.orbCountBonus;
+                stats.explosionRadiusBonus = debugStats.explosionRadiusBonus;
+            }
+
+            runtimeStats[ultimate] = stats;
+        }
+
+        return runtimeStats[ultimate];
+    }
+    public void UpgradeUltimate(UltimateUpgradeType type, float value)
+    {
+        if (equippedUltimate == null)
+            return;
+
+        UltimateRuntimeStats stats = GetRuntimeStats(equippedUltimate);
+        stats.ApplyUpgrade(type, value);
+    }
+    public void ApplyDebugUpgrade()
+    {
+        if (debugUltimate == null) return;
+
+        UltimateRuntimeStats stats = GetRuntimeStats(debugUltimate);
+
+        stats.durationBonus += debugStats.durationBonus;
+        stats.damageBonus += debugStats.damageBonus;
+        stats.cooldownReduction += debugStats.cooldownReduction;
+
+        stats.speedMultiplierBonus += debugStats.speedMultiplierBonus;
+        stats.orbCountBonus += debugStats.orbCountBonus;
+        stats.explosionRadiusBonus += debugStats.explosionRadiusBonus;
+
+        Debug.Log("Debug upgrade applied.");
     }
 }

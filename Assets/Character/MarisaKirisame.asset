@@ -18,5 +18,5 @@ MonoBehaviour:
   moveSpeed: 5
   startingWeapon: {fileID: 11400000, guid: 85a19ecf192221d4c9c1a43fb70e1869, type: 2}
   availableUltimates:
-  - {fileID: 11400000, guid: b117b06f058851743826ed9a094668b0, type: 2}
+  - {fileID: 11400000, guid: 3e9fa02c1e3084309b5fa2c4096c8426, type: 2}
   selectedUltimate: {fileID: 0}

@@ -16,6 +16,30 @@ public class BlazingStar : UltimateData
         if (blazingStarPrefab == null || user == null)
             return;
 
+        UltimateController controller = Object.FindFirstObjectByType<UltimateController>();
+        UltimateRuntimeStats stats = controller.GetRuntimeStats(this);
+
+        float finalDamage =
+            UltimateStatCalculator.GetStat(
+                damage,
+                UltimateUpgradeType.Damage,
+                stats
+            );
+
+        float finalDuration =
+            UltimateStatCalculator.GetStat(
+                duration,
+                UltimateUpgradeType.Duration,
+                stats
+            );
+
+        float finalSpeed =
+            UltimateStatCalculator.GetStat(
+                speedMultiplier,
+                UltimateUpgradeType.SpeedMultiplier,
+                stats
+            );
+
         GameObject obj = Instantiate(
             blazingStarPrefab,
             user.transform.position,
@@ -30,10 +54,10 @@ public class BlazingStar : UltimateData
         {
             blazingStar.Initialize(
                 user.transform,
-                duration,
-                damage,
+                finalDuration,
+                finalDamage,
                 hitCooldown,
-                speedMultiplier
+                finalSpeed
             );
         }
     }

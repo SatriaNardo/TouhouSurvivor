@@ -229,7 +229,7 @@ MonoBehaviour:
   player: {fileID: 0}
   spawnInterval: 0.5
   spawnOffset: 2
-  enemySpeed: 2
+  enemySpeed: 4
 --- !u!4 &432246671
 Transform:
   m_ObjectHideFlags: 0
@@ -814,7 +814,7 @@ MonoBehaviour:
   playerPrefab: {fileID: 1348140513522974847, guid: e736c72bcb33ead4fa70b833dbfbc873,
     type: 3}
   spawnPoint: {fileID: 857915154}
-  choosenCharacter: {fileID: 11400000, guid: bb946da4efbb353479aecfcc2c06c94b, type: 2}
+  choosenCharacter: {fileID: 11400000, guid: 3f9bbd22abcdc0b43a7e41a5b8650706, type: 2}
   followCamera: {fileID: 519420033}
   enemyManager: {fileID: 432246670}
   ultimateController: {fileID: 1225830796}
@@ -23833,6 +23833,14 @@ MonoBehaviour:
   player: {fileID: 1348140513522974847, guid: e736c72bcb33ead4fa70b833dbfbc873, type: 3}
   ultimateButton: {fileID: 1432596746}
   cooldownImage: {fileID: 852685123}
+  debugUltimate: {fileID: 11400000, guid: 8ee62e7b0383ad04cbf047abbaba3b83, type: 2}
+  debugStats:
+    durationBonus: 0
+    damageBonus: 0
+    cooldownReduction: 0
+    speedMultiplierBonus: 0
+    orbCountBonus: 0
+    explosionRadiusBonus: 0
 --- !u!114 &1225830797
 MonoBehaviour:
   m_ObjectHideFlags: 0

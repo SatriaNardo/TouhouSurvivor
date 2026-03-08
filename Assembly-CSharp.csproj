@@ -72,10 +72,13 @@
     <Compile Include="Assets\Script\PlayerAttack.cs" />
     <Compile Include="Assets\Script\ScriptableObject\UltimateData.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
+    <Compile Include="Assets\Script\UltimateStatCalculator.cs" />
+    <Compile Include="Assets\Script\UltimateUpgradeDebug.cs" />
     <Compile Include="Assets\Script\ProjectileWeaponRuntimeStats.cs" />
     <Compile Include="Assets\Cainos\Pixel Art Top Down - Basic\Script\SpriteColorAnimation.cs" />
     <Compile Include="Assets\Script\OrbitWeaponRuntimeStats.cs" />
     <Compile Include="Assets\Script\Weapons.cs" />
+    <Compile Include="Assets\Script\UltimateRuntimeStats.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
@@ -101,6 +104,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
     <Compile Include="Assets\Script\ScriptableObject\CharacterData.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
+    <Compile Include="Assets\Script\UltimateControllerEditor.cs" />
     <Compile Include="Assets\Script\ScriptableObject\MasterSpark.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
@@ -112,7 +116,9 @@
     <Compile Include="Assets\Script\MeteoricDebris.cs" />
     <Compile Include="Assets\PlayerInputActions.cs" />
     <Compile Include="Assets\Script\CharacterInitializer.cs" />
+    <Compile Include="Assets\Script\HomingOrbBehaviour.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Script\UltimateUpgrade.cs" />
     <Compile Include="Assets\Script\MasterSparkBehaviour.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\Script\ScriptableObject\WeaponData.cs" />
@@ -120,9 +126,11 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
     <Compile Include="Assets\Script\PlayerController.cs" />
     <Compile Include="Assets\Script\Enemy.cs" />
+    <Compile Include="Assets\Script\UltimateUpgradeType.cs" />
     <Compile Include="Assets\Script\UltimateController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
+    <Compile Include="Assets\Script\ScriptableObject\HomingOrb.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
