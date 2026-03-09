@@ -1,8 +1,8 @@
 using UnityEngine;
 using System.Collections;
 
-[CreateAssetMenu(menuName = "Ultimate/Homing Orbs")]
-public class HomingOrb : UltimateData
+[CreateAssetMenu(menuName = "Ultimate/Fantasy Seal")]
+public class FantasySeal : UltimateData
 {
     [Header("Orb Settings")]
     public GameObject orbPrefab;
@@ -55,12 +55,12 @@ public class HomingOrb : UltimateData
         {
             Vector3 spawnPos = user.transform.position + (Vector3)(launchDir * 0.5f);
 
-            GameObject orb = Instantiate(orbPrefab, spawnPos, Quaternion.identity);
+            GameObject seal = Instantiate(orbPrefab, spawnPos, Quaternion.identity);
 
-            HomingOrbBehaviour orbBehaviour = orb.GetComponent<HomingOrbBehaviour>();
-            if (orbBehaviour != null)
+            FantasySealBehaviour sealBehaviour = seal.GetComponent<FantasySealBehaviour>();
+            if (sealBehaviour != null)
             {
-                orbBehaviour.Initialize(dmg, radius, moveSpeed, launchDir);
+                sealBehaviour.Initialize(dmg, radius, moveSpeed, launchDir);
             }
 
             yield return new WaitForSeconds(spawnDelay);

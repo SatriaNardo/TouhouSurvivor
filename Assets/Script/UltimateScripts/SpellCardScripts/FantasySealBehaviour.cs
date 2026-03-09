@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class HomingOrbBehaviour : MonoBehaviour
+public class FantasySealBehaviour : MonoBehaviour
 {
     private float damage;
     private float explosionRadius;
@@ -22,7 +22,9 @@ public class HomingOrbBehaviour : MonoBehaviour
     private float homingDelay = 0.4f;
     private float homingTimer;
     private bool canHome = false;
+
     private Vector3 targetScale;
+
     public void Initialize(float dmg, float radius, float moveSpeed, Vector2 launchDirection)
     {
         damage = dmg;
@@ -36,31 +38,27 @@ public class HomingOrbBehaviour : MonoBehaviour
         homingTimer = homingDelay;
         canHome = false;
 
-        // Spawn scale animation
         targetScale = transform.localScale;
         transform.localScale = targetScale * spawnScale;
     }
 
     void Update()
     {
-        // Speed acceleration
         speed = Mathf.MoveTowards(speed, maxSpeed, acceleration * Time.deltaTime);
 
-        // Wait before homing
         if (!canHome)
         {
             homingTimer -= Time.deltaTime;
             if (homingTimer <= 0f)
                 canHome = true;
         }
-        // Scale animation
+
         transform.localScale = Vector3.Lerp(
             transform.localScale,
             targetScale,
             scaleSpeed * Time.deltaTime
         );
 
-        // Homing
         if (canHome)
         {
             if (target == null)
@@ -84,10 +82,8 @@ public class HomingOrbBehaviour : MonoBehaviour
             }
         }
 
-        // Movement
         transform.position += (Vector3)(direction * speed * Time.deltaTime);
 
-        // Rotate toward movement
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         Quaternion targetRot = Quaternion.Euler(0f, 0f, angle);
         transform.rotation = Quaternion.Lerp(transform.rotation, targetRot, 15f * Time.deltaTime);
