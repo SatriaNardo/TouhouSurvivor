@@ -15,4 +15,8 @@ public class WeaponAdd : MonoBehaviour
 
         managerWeapons.AddWeapon(weaponData);
     }
+    public void UpgradeStuff()
+    {
+        managerWeapons.ApplyToAllProjectiles(w => w.UpgradeBurst(2));
+    }
 }

@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using System;
 
 public class WeaponManager : MonoBehaviour
 {
@@ -56,6 +57,18 @@ public class WeaponManager : MonoBehaviour
         {
             projectileWeapon.Initialize(projectileData);
             activeWeapons.Add(projectileWeapon);
+        }
+    }
+    public void ApplyToAllProjectiles(Action<ProjectileWeapon> upgrade)
+    {
+        foreach (var weapon in activeWeapons)
+        {
+            ProjectileWeapon projectile = weapon as ProjectileWeapon;
+
+            if (projectile != null)
+            {
+                upgrade(projectile);
+            }
         }
     }
 }

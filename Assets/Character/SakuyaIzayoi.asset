@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7b904edd7c6bbeb4a9f678c2cafae9ac, type: 3}
-  m_Name: MarisaKirisame
+  m_Name: SakuyaIzayoi
   m_EditorClassIdentifier: Assembly-CSharp::CharacterData
-  characterName: Marisa Kirisame
-  characterSprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee,
+  characterName: Sakuya Izayoi
+  characterSprite: {fileID: -9095717837082945937, guid: bd3cb4af8406d4436a2ae8c2aafe1f8d,
     type: 3}
   moveSpeed: 5
-  startingWeapon: {fileID: 11400000, guid: 85a19ecf192221d4c9c1a43fb70e1869, type: 2}
+  startingWeapon: {fileID: 11400000, guid: a5823b8b69d9c4aef9e2468152e0519a, type: 2}
   availableUltimates:
-  - {fileID: 11400000, guid: b117b06f058851743826ed9a094668b0, type: 2}
+  - {fileID: 11400000, guid: 8ee62e7b0383ad04cbf047abbaba3b83, type: 2}
   selectedUltimate: {fileID: 0}

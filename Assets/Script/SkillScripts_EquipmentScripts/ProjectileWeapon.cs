@@ -83,18 +83,29 @@ public class ProjectileWeapon : Weapon
     // ================= WAVES =================
 
     IEnumerator FireWaves()
+    {       
+    if (player == null)
+        yield break;
+
+    Vector2 baseDir = lastMoveDirection;
+
+    if (runtimeStats.targetEnemy)
     {
-        if (player == null)
-            yield break;
+        Enemy target = FindClosestEnemyOnScreen();
 
-        Vector2 baseDir = lastMoveDirection;
-
-        for (int w = 0; w < runtimeStats.waveCount; w++)
+        if (target != null)
         {
-            yield return StartCoroutine(FireBurst(baseDir));
+            baseDir =
+                (target.transform.position - transform.position).normalized;
+        }
+    }
 
-            if (w < runtimeStats.waveCount - 1)
-                yield return new WaitForSeconds(runtimeStats.waveInterval);
+    for (int w = 0; w < runtimeStats.waveCount; w++)
+    {
+        yield return StartCoroutine(FireBurst(baseDir));
+
+        if (w < runtimeStats.waveCount - 1)
+            yield return new WaitForSeconds(runtimeStats.waveInterval);
         }
     }
 
@@ -173,6 +184,14 @@ public class ProjectileWeapon : Weapon
             debris.Initialize(direction, runtimeStats);
             return;
         }
+        
+        // Try SilverKnives
+        SilverKnife knife = projObj.GetComponent<SilverKnife>();
+        if (knife != null)
+        {
+            knife.Initialize(direction, runtimeStats);
+            return;
+        }
 
         // Safety warning
         Debug.LogWarning(
@@ -221,46 +240,102 @@ public class ProjectileWeapon : Weapon
         return closest;
     }
 
-    // ================= UPGRADE FUNCTIONS =================
 
-    public void UpgradeDamage(float percent)
+
+    // ================= GLOBAL UPGRADE FUNCTIONS =================
+
+    // DAMAGE
+    public void UpgradeDamagePercent(float percent)
     {
         runtimeStats.baseDamage =
             Mathf.RoundToInt(runtimeStats.baseDamage * (1f + percent));
     }
 
+    public void UpgradeDamageFlat(int amount)
+    {
+        runtimeStats.baseDamage += amount;
+    }
+
+
+    // KNOCKBACK
+    public void UpgradeKnockback(float amount)
+    {
+        runtimeStats.baseKnockback += amount;
+    }
+
+    public void UpgradeKnockbackDuration(float amount)
+    {
+        runtimeStats.baseKnockbackDuration += amount;
+    }
+
+
+    // HIT COOLDOWN
+    public void UpgradeHitCooldown(float percent)
+    {
+        runtimeStats.baseHitCooldown *= (1f - percent);
+    }
+
+
+    // ATTACK SPEED
     public void UpgradeAttackSpeed(float percent)
     {
         runtimeStats.attackInterval *= (1f - percent);
     }
 
-    public void UpgradeSpread(int amount)
-    {
-        runtimeStats.spreadCount += amount;
-    }
 
-    public void UpgradeBurst(int amount)
-    {
-        runtimeStats.burstCount += amount;
-    }
-
-    public void UpgradeCone(float extraAngle)
-    {
-        runtimeStats.coneAngle += extraAngle;
-    }
-
-    public void UpgradeWaveCount(int amount)
-    {
-        runtimeStats.waveCount += amount;
-    }
-
+    // PROJECTILE SPEED
     public void UpgradeProjectileSpeed(float percent)
     {
         runtimeStats.projectileSpeed *= (1f + percent);
     }
 
-    public void UpgradeHoming(float extraStrength)
+    public void UpgradeProjectileSpeedFlat(float amount)
     {
-        runtimeStats.homingStrength += extraStrength;
+        runtimeStats.projectileSpeed += amount;
+    }
+
+
+    // SPREAD
+    public void UpgradeSpread(int amount)
+    {
+        runtimeStats.spreadCount += amount;
+    }
+
+
+    // CONE ANGLE
+    public void UpgradeConeAngle(float amount)
+    {
+        runtimeStats.coneAngle += amount;
+    }
+
+
+    // BURST
+    public void UpgradeBurst(int amount)
+    {
+        runtimeStats.burstCount += amount;
+    }
+
+    public void UpgradeBurstDelay(float percent)
+    {
+        runtimeStats.delayBetweenBursts *= (1f - percent);
+    }
+
+
+    // WAVE
+    public void UpgradeWaveCount(int amount)
+    {
+        runtimeStats.waveCount += amount;
+    }
+
+    public void UpgradeWaveInterval(float percent)
+    {
+        runtimeStats.waveInterval *= (1f - percent);
+    }
+
+
+    // HOMING
+    public void UpgradeHomingStrength(float amount)
+    {
+        runtimeStats.homingStrength += amount;
     }
 }

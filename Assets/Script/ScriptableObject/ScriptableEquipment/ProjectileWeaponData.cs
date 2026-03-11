@@ -28,4 +28,8 @@ public class ProjectileWeaponData : WeaponData
 
     [Header("Targeting")]
     public bool requireEnemyToShoot = true;
+    public bool targetEnemy = false;
+
+    [Header("Piercing")]
+    public bool pierceEnemy = false;
 }

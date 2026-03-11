@@ -22,6 +22,9 @@ public class ProjectileWeaponRuntimeStats
     public float homingStrength;
 
     public bool requireEnemyToShoot; 
+    public bool targetEnemy;
+
+    public bool pierceEnemy;
 
     public ProjectileWeaponRuntimeStats(ProjectileWeaponData data)
     {
@@ -46,5 +49,8 @@ public class ProjectileWeaponRuntimeStats
         homingStrength = data.homingStrength;
 
         requireEnemyToShoot = data.requireEnemyToShoot; 
+        targetEnemy = data.targetEnemy;
+
+        pierceEnemy = data.pierceEnemy;
     }
 }
