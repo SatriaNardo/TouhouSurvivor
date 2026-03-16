@@ -26,6 +26,9 @@ public class Talisman : MonoBehaviour
     {
         if (stats == null)
             return;
+        if (SakuyaWorldBehaviour.Instance != null &&
+            SakuyaWorldBehaviour.Instance.IsTimeStopped)
+            return;
         //Wait before homing
         if (!canHome)
         {

@@ -32,4 +32,10 @@ public class ProjectileWeaponData : WeaponData
 
     [Header("Piercing")]
     public bool pierceEnemy = false;
+
+    [Header("Bouncing")]
+    public bool bounceScreen = false;
+    public int bounceCount = 1;
+
+
 }

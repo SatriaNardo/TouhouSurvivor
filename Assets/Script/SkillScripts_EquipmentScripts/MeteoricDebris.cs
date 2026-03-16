@@ -25,7 +25,9 @@ public class MeteoricDebris : MonoBehaviour
     {
         if (stats == null)
             return;
-
+        if (SakuyaWorldBehaviour.Instance != null &&
+            SakuyaWorldBehaviour.Instance.IsTimeStopped)
+            return;
         // Move forward
         transform.position +=
             (Vector3)(direction * stats.projectileSpeed * Time.deltaTime);

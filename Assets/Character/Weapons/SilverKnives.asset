@@ -22,7 +22,7 @@ MonoBehaviour:
   projectilePrefab: {fileID: 3149400379505672898, guid: e858d6014cb8d466d83e6be07a5823b2,
     type: 3}
   attackInterval: 1
-  projectileSpeed: 8
+  projectileSpeed: 12
   spreadCount: 1
   coneAngle: 30
   burstCount: 1
@@ -34,3 +34,5 @@ MonoBehaviour:
   requireEnemyToShoot: 1
   targetEnemy: 1
   pierceEnemy: 1
+  bounceScreen: 1
+  bounceCount: 1

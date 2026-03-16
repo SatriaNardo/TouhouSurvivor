@@ -26,6 +26,9 @@ public class ProjectileWeaponRuntimeStats
 
     public bool pierceEnemy;
 
+    public bool bounceScreen;
+    public int bounceCount;
+
     public ProjectileWeaponRuntimeStats(ProjectileWeaponData data)
     {
         baseDamage = data.baseDamage;
@@ -52,5 +55,8 @@ public class ProjectileWeaponRuntimeStats
         targetEnemy = data.targetEnemy;
 
         pierceEnemy = data.pierceEnemy;
+
+        bounceScreen = data.bounceScreen;
+        bounceCount = data.bounceCount;
     }
 }

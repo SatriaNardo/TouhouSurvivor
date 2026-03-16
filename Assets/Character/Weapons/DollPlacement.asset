@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c32b38f424527ee41b84d6f13690884a, type: 3}
+  m_Name: DollPlacement
+  m_EditorClassIdentifier: Assembly-CSharp::OrbitWeaponData
+  weaponName: Doll Placement
+  weaponPrefab: {fileID: 265500203032882504, guid: d1d5d164423bc0549b74f72dd45b44b8,
+    type: 3}
+  baseDamage: 1
+  baseKnockback: 5
+  baseKnockbackDuration: 0.15
+  baseHitCooldown: 0.1
+  orbitPiecePrefab: {fileID: 173616339183574905, guid: 2013762e2941d456fbc205131d4a9a69,
+    type: 3}
+  weaponCount: 1
+  orbitDistance: 1.5
+  rotateSpeed: 360
+  fadeInTime: 0.3
+  activeTime: 1
+  fadeOutTime: 0.3

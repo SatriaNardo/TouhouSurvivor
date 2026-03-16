@@ -50,7 +50,7 @@ public class ProjectileWeapon : Weapon
         if (isAttacking)
             return;
 
-        attackTimer -= Time.deltaTime;
+        attackTimer -= Time.unscaledDeltaTime;
 
         if (attackTimer <= 0f)
         {
@@ -337,5 +337,11 @@ public class ProjectileWeapon : Weapon
     public void UpgradeHomingStrength(float amount)
     {
         runtimeStats.homingStrength += amount;
+    }
+
+    //BOUNCE
+    public void UpgradeBounceCount(int amount)
+    {
+        runtimeStats.bounceCount += amount;
     }
 }

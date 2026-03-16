@@ -45,36 +45,48 @@ public class OrbitWeapon : Weapon
         }
     }
 
-    void BuildOrbit()
+void BuildOrbit()
+{
+    orbitInstances.Clear();
+
+    for (int i = 0; i < runtimeStats.weaponCount; i++)
     {
-        orbitInstances.Clear();
+        GameObject obj = Instantiate(
+            orbitData.orbitPiecePrefab,
+            transform
+        );
 
-        for (int i = 0; i < runtimeStats.weaponCount; i++)
+        obj.transform.localPosition = Vector3.zero;
+
+        // LASER PIECE
+        NonDirectionalLaser piece = obj.GetComponent<NonDirectionalLaser>();
+
+        if (piece != null)
         {
-            GameObject obj = Instantiate(
-                orbitData.orbitPiecePrefab,
-                transform
+            piece.SetController(this);
+            piece.SetFadeStats(
+                runtimeStats.fadeInTime,
+                runtimeStats.activeTime,
+                runtimeStats.fadeOutTime
             );
-
-            obj.transform.localPosition = Vector3.zero;
-
-            NonDirectionalLaser piece = obj.GetComponent<NonDirectionalLaser>();
-
-            if (piece != null)
-            {
-                piece.SetController(this);
-                piece.SetFadeStats(
-                    runtimeStats.fadeInTime,
-                    runtimeStats.activeTime,
-                    runtimeStats.fadeOutTime
-                );
-            }
-
-            orbitInstances.Add(obj.transform);
         }
 
-        ArrangeOrbit();
+        // DOLL PLACEMENT PIECE
+        DollPlacement doll = obj.GetComponent<DollPlacement>();
+
+        if (doll != null)
+        {
+            float angleStep = 360f / runtimeStats.weaponCount;
+            float startAngle = i * angleStep;
+
+            doll.Initialize(runtimeStats, transform.parent, startAngle);
+        }
+
+        orbitInstances.Add(obj.transform);
     }
+
+    ArrangeOrbit();
+}
 
     void RebuildOrbit()
     {

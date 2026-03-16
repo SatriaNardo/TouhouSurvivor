@@ -25,6 +25,13 @@ public class EnemyManager : MonoBehaviour
 
     void Update()
     {
+        if (SakuyaWorldBehaviour.Instance != null &&
+            SakuyaWorldBehaviour.Instance.IsTimeStopped)
+        {
+            StopAllEnemies();
+            return;
+        }
+
         HandleSpawning();
         HandleEnemyMovement();
         CleanupDestroyedEnemies();
@@ -104,6 +111,15 @@ public class EnemyManager : MonoBehaviour
             rb.linearVelocity = direction * enemySpeed;
         }
     }
+    void StopAllEnemies()
+{
+    foreach (var rb in activeEnemies)
+    {
+        if (rb == null) continue;
+
+        rb.linearVelocity = Vector2.zero;
+    }
+}
     void CleanupDestroyedEnemies()
     {
         activeEnemies.RemoveAll(rb => rb == null);
