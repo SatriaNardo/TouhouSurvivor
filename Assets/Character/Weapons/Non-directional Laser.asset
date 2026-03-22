@@ -22,7 +22,7 @@ MonoBehaviour:
   orbitPiecePrefab: {fileID: 1517015577779894552, guid: e731c6fe596be2b45919d5e364f09b37,
     type: 3}
   weaponCount: 1
-  orbitDistance: 7
+  orbitDistance: 2
   rotateSpeed: 45
   fadeInTime: 1
   activeTime: 5

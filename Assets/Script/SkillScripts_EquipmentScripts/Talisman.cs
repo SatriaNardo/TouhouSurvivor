@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Talisman : MonoBehaviour
+public class Talisman : MonoBehaviour, IProjectile
 {
     private Transform target;
 

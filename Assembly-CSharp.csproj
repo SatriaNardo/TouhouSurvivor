@@ -62,11 +62,14 @@
     <Compile Include="Assets/Script/Weapons.cs" />
     <Compile Include="Assets/Script/UltimateScripts/UltimateStatCalculator.cs" />
     <Compile Include="Assets/Script/SkillScripts_EquipmentScripts/OrbitWeapon.cs" />
+    <Compile Include="Assets/Script/SkillScripts_EquipmentScripts/IOrbitPiece.cs" />
+    <Compile Include="Assets/Script/UltimateScripts/SpellCardScripts/PhantasmicKillerBehaviour.cs" />
     <Compile Include="Assets/Script/ScriptableObject/ScriptableSpellCard/DemonBindingCircle.cs" />
     <Compile Include="Assets/Script/ScriptableObject/ScriptableSpellCard/FantasySeal.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_ExampleScript_01.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMPro_InstructionOverlay.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexShakeB.cs" />
+    <Compile Include="Assets/Script/SkillScripts_EquipmentScripts/IProjectile.cs" />
     <Compile Include="Assets/Script/UltimateScripts/SpellCardScripts/FantasySealBehaviour.cs" />
     <Compile Include="Assets/Script/UltimateScripts/SpellCardScripts/SakuyaWorldBehaviour.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexJitter.cs" />
@@ -84,6 +87,7 @@
     <Compile Include="Assets/Script/SkillScripts_EquipmentScripts/OrbitWeaponRuntimeStats.cs" />
     <Compile Include="Assets/Cainos/Pixel Art Top Down - Basic/Script/CameraFollow.cs" />
     <Compile Include="Assets/Script/SkillScripts_EquipmentScripts/NonDirectionalLaser.cs" />
+    <Compile Include="Assets/Script/ScriptableObject/ScriptableSpellCard/SeekerDolls.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextInfoDebugTool.cs" />
     <Compile Include="Assets/Script/UltimateScripts/SpellCardScripts/BlazingStarBehaviour.cs" />
     <Compile Include="Assets/Cainos/Pixel Art Top Down - Basic/Script/TopDownCharacterController.cs" />
@@ -100,9 +104,11 @@
     <Compile Include="Assets/Script/ScriptableObject/ScriptableEquipment/ProjectileWeaponData.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_DigitValidator.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_FrameRateCounter.cs" />
+    <Compile Include="Assets/Script/ScriptableObject/ScriptableSpellCard/PhantasmicKiller.cs" />
     <Compile Include="Assets/Cainos/Pixel Art Top Down - Basic/Script/PropsAltar.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextMeshSpawner.cs" />
+    <Compile Include="Assets/Script/UltimateScripts/SpellCardScripts/SeekerDollsBehaviour.cs" />
     <Compile Include="Assets/Script/SkillScripts_EquipmentScripts/SilverKnives.cs" />
     <Compile Include="Assets/Script/MobileJoystickUI.cs" />
     <Compile Include="Assets/Script/WeaponManager.cs" />

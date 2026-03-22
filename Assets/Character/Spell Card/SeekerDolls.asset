@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d51b47f932fc24826a2125908966bb42, type: 3}
+  m_Name: SeekerDolls
+  m_EditorClassIdentifier: Assembly-CSharp::SeekerDolls
+  ultimateName: Seeker Dolls
+  cooldown: 10
+  upgrades: []
+  circlePrefab: {fileID: 1253972535743053663, guid: 9cf2c506134fb4370919d61f105d24e0,
+    type: 3}
+  laserPrefab: {fileID: 5973123843832006323, guid: 49d063da7f6524b3facd1e05212dd64c,
+    type: 3}
+  circleCount: 8
+  radius: 1
+  duration: 8
+  damage: 20
+  hitCooldown: 0.2
+  coneAngle: 60
+  sweepSpeed: 30

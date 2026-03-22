@@ -161,43 +161,25 @@ public class ProjectileWeapon : Weapon
 
     // ================= SPAWN =================
 
-    void SpawnProjectile(Vector2 direction)
+void SpawnProjectile(Vector2 direction)
+{
+    GameObject projObj = Instantiate(
+        projectileData.projectilePrefab,
+        transform.position,
+        Quaternion.identity
+    );
+
+    IProjectile projectile = projObj.GetComponent<IProjectile>();
+
+    if (projectile != null)
     {
-        GameObject projObj = Instantiate(
-            projectileData.projectilePrefab,
-            transform.position,
-            Quaternion.identity
-        );
-
-        // Try Talisman
-        Talisman talisman = projObj.GetComponent<Talisman>();
-        if (talisman != null)
-        {
-            talisman.Initialize(direction, runtimeStats);
-            return;
-        }
-
-        // Try MeteoricDebris
-        MeteoricDebris debris = projObj.GetComponent<MeteoricDebris>();
-        if (debris != null)
-        {
-            debris.Initialize(direction, runtimeStats);
-            return;
-        }
-        
-        // Try SilverKnives
-        SilverKnife knife = projObj.GetComponent<SilverKnife>();
-        if (knife != null)
-        {
-            knife.Initialize(direction, runtimeStats);
-            return;
-        }
-
-        // Safety warning
-        Debug.LogWarning(
-            "Projectile prefab has no supported projectile script attached."
-        );
+        projectile.Initialize(direction, runtimeStats);
     }
+    else
+    {
+        Debug.LogWarning("Projectile missing IProjectile interface!");
+    }
+}
 
     // ================= TARGETING =================
 

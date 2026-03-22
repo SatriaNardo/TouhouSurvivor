@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MeteoricDebris : MonoBehaviour
+public class MeteoricDebris : MonoBehaviour, IProjectile
 {
     private ProjectileWeaponRuntimeStats stats;
 

@@ -33,11 +33,11 @@ public class OrbitWeapon : Weapon
         if (runtimeStats == null)
             return;
 
-        transform.Rotate(
-            Vector3.forward *
-            runtimeStats.rotateSpeed *
-            Time.deltaTime
-        );
+        // transform.Rotate(
+        //     Vector3.forward *
+        //     runtimeStats.rotateSpeed *
+        //     Time.deltaTime
+        // );
 
         if (runtimeStats.weaponCount != lastWeaponCount)
         {
@@ -45,48 +45,40 @@ public class OrbitWeapon : Weapon
         }
     }
 
-void BuildOrbit()
-{
-    orbitInstances.Clear();
-
-    for (int i = 0; i < runtimeStats.weaponCount; i++)
+    void BuildOrbit()
     {
-        GameObject obj = Instantiate(
-            orbitData.orbitPiecePrefab,
-            transform
-        );
+        orbitInstances.Clear();
 
-        obj.transform.localPosition = Vector3.zero;
+        float angleStep = 360f / runtimeStats.weaponCount;
 
-        // LASER PIECE
-        NonDirectionalLaser piece = obj.GetComponent<NonDirectionalLaser>();
-
-        if (piece != null)
+        for (int i = 0; i < runtimeStats.weaponCount; i++)
         {
-            piece.SetController(this);
-            piece.SetFadeStats(
-                runtimeStats.fadeInTime,
-                runtimeStats.activeTime,
-                runtimeStats.fadeOutTime
+            GameObject obj = Instantiate(
+                orbitData.orbitPiecePrefab,
+                transform
             );
-        }
 
-        // DOLL PLACEMENT PIECE
-        DollPlacement doll = obj.GetComponent<DollPlacement>();
+            obj.transform.localPosition = Vector3.zero;
 
-        if (doll != null)
-        {
-            float angleStep = 360f / runtimeStats.weaponCount;
             float startAngle = i * angleStep;
 
-            doll.Initialize(runtimeStats, transform.parent, startAngle);
+            // 🔥 UNIVERSAL INIT
+            IOrbitPiece piece = obj.GetComponent<IOrbitPiece>();
+
+            if (piece != null)
+            {
+                piece.Initialize(runtimeStats, transform.parent, startAngle);
+            }
+            else
+            {
+                Debug.LogWarning("Orbit piece missing IOrbitPiece!");
+            }
+
+            orbitInstances.Add(obj.transform);
         }
 
-        orbitInstances.Add(obj.transform);
+        ArrangeOrbit();
     }
-
-    ArrangeOrbit();
-}
 
     void RebuildOrbit()
     {

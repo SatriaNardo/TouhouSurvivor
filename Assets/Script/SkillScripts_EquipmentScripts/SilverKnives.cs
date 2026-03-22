@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class SilverKnife : MonoBehaviour
+public class SilverKnife : MonoBehaviour, IProjectile
 {
     private ProjectileWeaponRuntimeStats stats;
 

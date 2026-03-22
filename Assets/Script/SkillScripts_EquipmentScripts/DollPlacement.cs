@@ -1,17 +1,15 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-public class DollPlacement : MonoBehaviour
+public class DollPlacement : MonoBehaviour, IOrbitPiece
 {
     private OrbitWeaponRuntimeStats stats;
     private Transform player;
 
     private float orbitAngle;
 
-    [Header("Spin Settings")]
     public float spinSpeed = 720f;
 
-    // hit cooldown tracking
     private Dictionary<Enemy, float> hitTimers = new Dictionary<Enemy, float>();
 
     public void Initialize(OrbitWeaponRuntimeStats runtimeStats, Transform playerTransform, float startAngle)
@@ -23,15 +21,9 @@ public class DollPlacement : MonoBehaviour
 
     void Update()
     {
-        if (player == null || stats == null)
-            return;
+        if (stats == null || player == null) return;
 
-        HandleOrbit();
-        HandleSpin();
-    }
-
-    void HandleOrbit()
-    {
+        // ORBIT
         orbitAngle += stats.rotateSpeed * Time.deltaTime;
 
         float rad = orbitAngle * Mathf.Deg2Rad;
@@ -42,17 +34,14 @@ public class DollPlacement : MonoBehaviour
         ) * stats.orbitDistance;
 
         transform.position = (Vector2)player.position + offset;
-    }
 
-    void HandleSpin()
-    {
+        // SPIN
         transform.Rotate(0f, 0f, spinSpeed * Time.deltaTime);
     }
 
     void OnTriggerStay2D(Collider2D other)
     {
-        if (stats == null)
-            return;
+        if (stats == null) return;
 
         if (!other.TryGetComponent(out Enemy enemy))
             return;
@@ -64,12 +53,12 @@ public class DollPlacement : MonoBehaviour
 
         if (currentTime - hitTimers[enemy] >= stats.baseHitCooldown)
         {
-            Vector2 hitDir =
+            Vector2 dir =
                 (enemy.transform.position - transform.position).normalized;
 
             enemy.TakeDamage(
                 stats.baseDamage,
-                hitDir,
+                dir,
                 stats.baseKnockback,
                 stats.baseKnockbackDuration
             );
@@ -80,10 +69,10 @@ public class DollPlacement : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D other)
     {
-        if (!other.TryGetComponent(out Enemy enemy))
-            return;
-
-        if (hitTimers.ContainsKey(enemy))
-            hitTimers.Remove(enemy);
+        if (other.TryGetComponent(out Enemy enemy))
+        {
+            if (hitTimers.ContainsKey(enemy))
+                hitTimers.Remove(enemy);
+        }
     }
 }
